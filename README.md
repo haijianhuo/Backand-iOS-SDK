@@ -3,18 +3,7 @@ Backand SDK for iOS.
 
 ## About
 
-Backand-iOS-SDK is written in Swift and provides most of the functionality that the Backand REST API offers.
-
-### Things to do:
-- Social login (GitHub, Twitter, Facebook & Google)
-- Token refresh
-- Get information on currently logged in user
-- Realtime using [SocketIO](http://socket.io)
-- Improve error handling with custom error types?
-- Tests
-
-### Should I use this in a live app?
-Probably not (yet). If you don't require any user management and are just using anonymous access to Backand, then sure (token refresh is pretty important). This SDK is in very early development. It should progress rapidly overtime with any luck.
+Backand-iOS-SDK is written in Swift 3 and provides most of the functionality that the Backand REST API offers.
 
 ## Contents
 * [Installation](#installation)
@@ -34,29 +23,9 @@ Probably not (yet). If you don't require any user management and are just using 
 ## Requirements
 
 - iOS 8.0+
-- Xcode 7.3
+- Xcode 8.2
 
 ## Installation
-
-### CocoaPods
-
-[CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
-
-```bash
-$ gem install cocoapods
-```
-
-To integrate Backand-iOS-SDK into your Xcode project using CocoaPods, specify it in your `Podfile`:
-
-```ruby
-pod 'Backand-iOS-SDK', '~> 0.1.0'
-```
-
-Then, run the following command:
-
-```bash
-$ pod install
-```
 
 ### Manually
 
@@ -84,9 +53,9 @@ To retrieve a single item:
 let backand = Backand.sharedInstance
 backand.getItemWithId("id", "ObjectName", options: nil) { result in
     switch result {
-    case .Success(let item):
+    case .success(let item):
         print(item)
-    case .Failure(let error):
+    case .failure(let error):
         // Ouch. Should probably do something here.
     }
 }
@@ -97,9 +66,9 @@ To retrieve multiple items:
 let backand = Backand.sharedInstance
 backand.getItemsWithName("ObjectName", options: nil) { result in
     switch result {
-    case .Success(let item):
+    case .success(let item):
         print(item)
-    case .Failure(let error):
+    case .failure(let error):
         // Ouch. Should probably do something here.
     }
 }
@@ -111,9 +80,9 @@ backand.getItemsWithName("ObjectName", options: nil) { result in
 let backand = Backand.sharedInstance
 backand.createItem(["name": "Jake", "message": "Hello world!", "score": 36], name: "MessageOfTheDay", options: nil) { result in
     switch result {
-    case .Success:
+    case .success:
         // Yay.
-    case .Failure(let error):
+    case .failure(let error):
         // Ouch. Should probably do something here.
     }
 }
@@ -125,9 +94,9 @@ backand.createItem(["name": "Jake", "message": "Hello world!", "score": 36], nam
 let backand = Backand.sharedInstance
 backand.updateItemWithId("47", item: ["message": "Hello everyone."], name: "MessageOfTheDay", options: nil) { result in
     switch result {
-    case .Success:
+    case .success:
         // Yay.
-    case .Failure(let error):
+    case .failure(let error):
         // Ouch. Should probably do something here.
     }
 }
@@ -139,9 +108,9 @@ backand.updateItemWithId("47", item: ["message": "Hello everyone."], name: "Mess
 let backand = Backand.sharedInstance
 backand.deleteItemWithId("47", name: "MessageOfTheDay") { result in
     switch result {
-    case .Success:
+    case .success:
         // Yay.
-    case .Failure(let error):
+    case .failure(let error):
         // Ouch. Should probably do something here.
     }
 }
@@ -160,9 +129,9 @@ let user = [
 ]
 backand.signUp(user) { result in
     switch result {
-    case .Success:
+    case .success:
         // Yay.
-    case .Failure(let error):
+    case .failure(let error):
         // Ouch. Should probably do something here.
     }
 }
@@ -174,9 +143,9 @@ backand.signUp(user) { result in
 let backand = Backand.sharedInstance
 backand.signIn("example@email.com", password: "password") { result in
     switch result {
-    case .Success:
+    case .success:
         // Yay.
-    case .Failure(let error):
+    case .failure(let error):
         // Ouch. Should probably do something here.
     }
 }
@@ -191,9 +160,9 @@ Backand allows you to define queries in the cloud. Here's how you can run them:
 let backand = Backand.sharedInstance
 backand.runQueryWithName("query-name", parameters: nil) { result in
     switch result {
-    case .Success(let item):
+    case .success(let item):
         print(item)
-    case .Failure(let error):
+    case .failure(let error):
         // Ouch. Should probably do something here.
     }
 }
@@ -212,9 +181,9 @@ let actions = [createAction, updateAction, deleteAction]
 
 backand.performActions(actions) { result in
     switch result {
-    case .Success:
+    case .success:
         // Yay.
-    case .Failure(let error):
+    case .failure(let error):
         // Ouch. Should probably do something here.
     }
 }
@@ -240,9 +209,9 @@ let options: [BackandOption] = [
 // Example request
 backand.getItemsWithName("ObjectName", options: options) { result in
     switch result {
-    case .Success(let items):
+    case .success(let items):
         print(items)
-    case .Failure(let error):
+    case .failure(let error):
         // Ouch. Should probably do something here.
     }
 }
