@@ -4,8 +4,8 @@ target 'Backand' do
   use_frameworks!
 
   # Pods for Backand
-  pod 'Alamofire', '~> 3.4'
-  pod 'SwiftKeychainWrapper'
+  pod 'Alamofire', '~> 4.4.0'
+  pod 'SwiftKeychainWrapper', '~> 3.0.1'
 
   target 'BackandTests' do
     inherit! :search_paths

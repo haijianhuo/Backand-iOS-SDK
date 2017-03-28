@@ -2,8 +2,8 @@
 //  Backand.h
 //  Backand
 //
-//  Created by Jake Lawson on 02/06/2016.
-//  Copyright © 2016 Jake Lawson. All rights reserved.
+//  Created by Haijian Huo on 3/28/17.
+//  Copyright © 2017 Haijian Huo. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

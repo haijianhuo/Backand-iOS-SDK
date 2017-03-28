@@ -157,12 +157,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29C262371D006CBC00B2BBB0 /* Build configuration list for PBXNativeTarget "Backand" */;
 			buildPhases = (
-				3259B673BD4ADA7E1AC28DB7 /* 📦 Check Pods Manifest.lock */,
+				3259B673BD4ADA7E1AC28DB7 /* [CP] Check Pods Manifest.lock */,
 				29C2621E1D006CBC00B2BBB0 /* Sources */,
 				29C2621F1D006CBC00B2BBB0 /* Frameworks */,
 				29C262201D006CBC00B2BBB0 /* Headers */,
 				29C262211D006CBC00B2BBB0 /* Resources */,
-				AA2BAB8F8E92C2139BEE502A /* 📦 Copy Pods Resources */,
+				AA2BAB8F8E92C2139BEE502A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -177,12 +177,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29C2623A1D006CBC00B2BBB0 /* Build configuration list for PBXNativeTarget "BackandTests" */;
 			buildPhases = (
-				4D6BDC5BC154D580C0E64C74 /* 📦 Check Pods Manifest.lock */,
+				4D6BDC5BC154D580C0E64C74 /* [CP] Check Pods Manifest.lock */,
 				29C262291D006CBC00B2BBB0 /* Sources */,
 				29C2622A1D006CBC00B2BBB0 /* Frameworks */,
 				29C2622B1D006CBC00B2BBB0 /* Resources */,
-				83EBA9B0534F9782F5779E58 /* 📦 Embed Pods Frameworks */,
-				755F59B556241F7B0D88DFCF /* 📦 Copy Pods Resources */,
+				83EBA9B0534F9782F5779E58 /* [CP] Embed Pods Frameworks */,
+				755F59B556241F7B0D88DFCF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,9 +206,11 @@
 				TargetAttributes = {
 					29C262221D006CBC00B2BBB0 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
 					};
 					29C2622C1D006CBC00B2BBB0 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
 					};
 				};
 			};
@@ -250,44 +252,44 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3259B673BD4ADA7E1AC28DB7 /* 📦 Check Pods Manifest.lock */ = {
+		3259B673BD4ADA7E1AC28DB7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		4D6BDC5BC154D580C0E64C74 /* 📦 Check Pods Manifest.lock */ = {
+		4D6BDC5BC154D580C0E64C74 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		755F59B556241F7B0D88DFCF /* 📦 Copy Pods Resources */ = {
+		755F59B556241F7B0D88DFCF /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,14 +297,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BackandTests/Pods-BackandTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		83EBA9B0534F9782F5779E58 /* 📦 Embed Pods Frameworks */ = {
+		83EBA9B0534F9782F5779E58 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,14 +312,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BackandTests/Pods-BackandTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AA2BAB8F8E92C2139BEE502A /* 📦 Copy Pods Resources */ = {
+		AA2BAB8F8E92C2139BEE502A /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,10 +461,11 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jakelawson.Backand;
+				PRODUCT_BUNDLE_IDENTIFIER = com.topbox.Backand;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -478,9 +481,10 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jakelawson.Backand;
+				PRODUCT_BUNDLE_IDENTIFIER = com.topbox.Backand;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -492,6 +496,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jakelawson.BackandTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -503,6 +508,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jakelawson.BackandTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
