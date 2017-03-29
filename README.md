@@ -1,9 +1,9 @@
-# Backand-iOS-SDK
+# HHBackand-iOS-SDK
 Backand SDK for iOS.
 
 ## About
 
-Backand-iOS-SDK is written in Swift 3 and provides most of the functionality that the Backand REST API offers.
+HHBackand-iOS-SDK is written in Swift 3 and provides most of the functionality that the Backand REST API offers.
 
 ## Contents
 * [Installation](#installation)
@@ -26,6 +26,26 @@ Backand-iOS-SDK is written in Swift 3 and provides most of the functionality tha
 - Xcode 8.2
 
 ## Installation
+
+### CocoaPods
+
+[CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
+
+```bash
+$ gem install cocoapods
+```
+
+To integrate HHBackand-iOS-SDK into your Xcode project using CocoaPods, specify it in your `Podfile`:
+
+```ruby
+pod 'HHBackand-iOS-SDK'
+```
+
+Then, run the following command:
+
+```bash
+$ pod install
+```
 
 ### Manually
 
