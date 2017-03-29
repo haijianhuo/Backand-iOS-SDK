@@ -10,12 +10,12 @@
 		1E0A6693D6C18BA2F573B5A6 /* Pods_Backand.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 346082278954E445AFF7488D /* Pods_Backand.framework */; };
 		290A9E491D007191006494D8 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 290A9E481D007191006494D8 /* README.md */; };
 		290A9E4B1D007196006494D8 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 290A9E4A1D007196006494D8 /* LICENSE */; };
-		290A9E4D1D007201006494D8 /* Backand-iOS-SDK.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 290A9E4C1D007201006494D8 /* Backand-iOS-SDK.podspec */; };
 		29C262271D006CBC00B2BBB0 /* Backand.h in Headers */ = {isa = PBXBuildFile; fileRef = 29C262261D006CBC00B2BBB0 /* Backand.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		29C2622E1D006CBC00B2BBB0 /* Backand.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C262231D006CBC00B2BBB0 /* Backand.framework */; };
 		29C262331D006CBC00B2BBB0 /* BackandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C262321D006CBC00B2BBB0 /* BackandTests.swift */; };
 		29C2623E1D006D8B00B2BBB0 /* Backand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C2623D1D006D8B00B2BBB0 /* Backand.swift */; };
 		57037EB8C1836F9A667251D4 /* Pods_BackandTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFBC22DCB68BA0EFA17280EC /* Pods_BackandTests.framework */; };
+		8DBF93381E8B4DE600C156DB /* HHBackand-iOS-SDK.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 8DBF93371E8B4DE600C156DB /* HHBackand-iOS-SDK.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +31,6 @@
 /* Begin PBXFileReference section */
 		290A9E481D007191006494D8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		290A9E4A1D007196006494D8 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		290A9E4C1D007201006494D8 /* Backand-iOS-SDK.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Backand-iOS-SDK.podspec"; sourceTree = "<group>"; };
 		29C262231D006CBC00B2BBB0 /* Backand.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Backand.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29C262261D006CBC00B2BBB0 /* Backand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Backand.h; sourceTree = "<group>"; };
 		29C2622D1D006CBC00B2BBB0 /* BackandTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BackandTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +41,7 @@
 		346082278954E445AFF7488D /* Pods_Backand.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Backand.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AA762DA2CA5A4E74DEB18FF /* Pods-BackandTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BackandTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BackandTests/Pods-BackandTests.release.xcconfig"; sourceTree = "<group>"; };
 		82DBB1806E2C40E0647D7E4A /* Pods-BackandTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BackandTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BackandTests/Pods-BackandTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8DBF93371E8B4DE600C156DB /* HHBackand-iOS-SDK.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "HHBackand-iOS-SDK.podspec"; sourceTree = "<group>"; };
 		99FADE778CB5662DF425E2B3 /* Pods-Backand.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Backand.release.xcconfig"; path = "Pods/Target Support Files/Pods-Backand/Pods-Backand.release.xcconfig"; sourceTree = "<group>"; };
 		9AFB583F8227CD43C8033E88 /* Pods-Backand.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Backand.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Backand/Pods-Backand.debug.xcconfig"; sourceTree = "<group>"; };
 		AFBC22DCB68BA0EFA17280EC /* Pods_BackandTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BackandTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,7 +122,7 @@
 		29C2623F1D006DFD00B2BBB0 /* Meatadata */ = {
 			isa = PBXGroup;
 			children = (
-				290A9E4C1D007201006494D8 /* Backand-iOS-SDK.podspec */,
+				8DBF93371E8B4DE600C156DB /* HHBackand-iOS-SDK.podspec */,
 				290A9E4A1D007196006494D8 /* LICENSE */,
 				290A9E481D007191006494D8 /* README.md */,
 				29C262421D006E4200B2BBB0 /* Info.plist */,
@@ -237,8 +237,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				290A9E4D1D007201006494D8 /* Backand-iOS-SDK.podspec in Resources */,
 				290A9E4B1D007196006494D8 /* LICENSE in Resources */,
+				8DBF93381E8B4DE600C156DB /* HHBackand-iOS-SDK.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
